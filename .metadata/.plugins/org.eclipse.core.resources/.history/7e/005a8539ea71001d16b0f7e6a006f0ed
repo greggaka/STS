@@ -1,0 +1,9 @@
+package com.akamine.interfaceDemo.models;
+
+public class Dog {
+
+	public Dog() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

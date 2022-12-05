@@ -1,0 +1,9 @@
+package com.gregg.abstractdemo.models;
+
+public class CashPayment {
+
+	public CashPayment() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

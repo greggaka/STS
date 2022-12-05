@@ -1,0 +1,11 @@
+package com.gregg.carAndDriver.models;
+
+public class Car {
+	//attributes
+	private int gas;
+	
+	public Car() {
+		this.gas = 10;
+	}
+
+}

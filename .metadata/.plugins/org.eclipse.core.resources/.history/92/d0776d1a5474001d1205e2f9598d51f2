@@ -1,0 +1,22 @@
+package com.gregg.zooKeeper.models;
+
+public class Bat extends Mammal {
+	
+	//constructors
+	public Bat() {
+		super(300);
+	}
+
+	//methods
+	public void fly() {
+		
+	}
+	
+	public void eatHumans() {
+		
+	}
+	
+	public void attackTown() {
+		
+	}
+}

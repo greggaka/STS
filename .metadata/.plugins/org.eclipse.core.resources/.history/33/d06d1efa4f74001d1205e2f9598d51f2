@@ -1,0 +1,25 @@
+package com.gregg.zooKeeper.models;
+
+public class Mammals {
+	
+	//attributes
+	private int energy;
+	
+	//constructors
+	public Mammals() {
+		this.energy = 100;
+	}
+
+	//getters and setters
+
+	public int getEnergy() {
+		return energy;
+	}
+
+	public void setEnergy(int energy) {
+		this.energy = energy;
+	}
+	
+	
+
+}

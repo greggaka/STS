@@ -1,0 +1,9 @@
+package com.gregg.zooKeeper.models;
+
+public class Bat {
+
+	public Bat() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

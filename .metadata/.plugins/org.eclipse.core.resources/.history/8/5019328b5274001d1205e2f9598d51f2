@@ -1,0 +1,15 @@
+package com.gregg.zooKeeper;
+
+import com.gregg.zooKeeper.models.Gorilla;
+
+public class ZooKeeperApplication {
+
+	public static void main(String[] args) {
+		Gorilla harambe = new Gorilla();
+		harambe.displayEnergy();
+		harambe.throwThings();
+		harambe.displayEnergy();
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.gregg.springDemo.models;
+
+public class FrontendDeveloper extends Developer {
+	private boolean isArtistic;
+	
+	public FrontendDeveloper() {
+		super("No name given", true, 75000, 6.5);
+		this.isArtistic = true;
+	}
+	
+	public FrontendDeveloper(String name) {
+		super(name, true, 75000, 6.5);
+		this.isArtistic = true;
+	}
+}
+  

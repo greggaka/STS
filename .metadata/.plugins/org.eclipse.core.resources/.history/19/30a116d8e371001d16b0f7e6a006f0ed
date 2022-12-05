@@ -1,0 +1,9 @@
+package com.gregg.springDemo.models;
+
+public class FrontendDeveloper {
+
+	public FrontendDeveloper() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

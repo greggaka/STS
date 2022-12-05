@@ -1,0 +1,5 @@
+package com.akamine.interfaceDemo.interfaces;
+
+public interface keepable {
+
+}

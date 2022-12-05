@@ -1,0 +1,26 @@
+package com.caresoft.clinicapp.models;
+
+import java.util.ArrayList;
+
+import com.caresoft.clinicapp.interfaces.HIPAACompliantAdmin;
+
+public class AdminUser extends User implements HIPAACompliantAdmin {
+	private Integer employeeID;
+	private String role;
+	private ArrayList<String> securityIncidents;
+
+	public AdminUser() {
+		super();
+	}
+	
+	public AdminUser(int id) {
+		super(id);
+	}
+
+	@Override
+	public ArrayList<String> reportSecurityIncidents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

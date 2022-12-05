@@ -1,0 +1,5 @@
+package com.akamine.interfaceDemo.models;
+
+public class Pet {
+
+}

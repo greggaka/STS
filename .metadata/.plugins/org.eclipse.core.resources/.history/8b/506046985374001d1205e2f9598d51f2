@@ -1,0 +1,22 @@
+package com.gregg.zooKeeper.models;
+
+public class Bat {
+	
+	//constructors
+	public Bat(300) {
+		super();
+	}
+
+	//methods
+	public void fly() {
+		
+	}
+	
+	public void eatHumans() {
+		
+	}
+	
+	public void attackTown() {
+		
+	}
+}

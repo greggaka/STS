@@ -1,0 +1,19 @@
+package com.akamine.interfaceDemo.models;
+
+public class Pet {
+	//attributes
+	private String name;
+	private String type;
+	
+	public Pet() {
+		this.name = "you haven't given me a name";
+	}
+	public Pet(String name) {
+		this.name = name;
+	}
+	
+	//other methods
+	
+	//getters and setters
+	
+}
