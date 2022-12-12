@@ -3,10 +3,12 @@
     <fullyQualifiedTypeName name="com.akamine.interfaceDemo.models.Dog"/>
     <fullyQualifiedTypeName name="com.gregg.carAndDriver.models.Driver"/>
     <fullyQualifiedTypeName name="com.gregg.zooKeeper.models.Bat"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.caresoft.clinicapp.interfaces.HIPAACompliantAdmin"/>
     <fullyQualifiedTypeName name="com.caresoft.clinicapp.interfaces.HIPAACompliantUser"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.gregg.fruityloops.models.Item"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 </qualifiedTypeNameHistroy>
