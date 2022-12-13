@@ -51,4 +51,8 @@ public class DonationService {
 		donationRepo.deleteById(id);
 		return "You deleted the record with the id of " + id;
 	}
+	
+	public List<Donation> searchDonation(String search) {
+		return donationRepo.findByDonationNameContaining(search);
+	}
 }

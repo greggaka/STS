@@ -14,7 +14,7 @@
         <title>Insert title here</title>
     </head>
     <body>
-		<form:form action="/donations/edit/process/${ donation.id }" method="post" modelAttribute="donation">
+		<form:form action="/donations/${ donation.id }" method="post" modelAttribute="donation">
 			<input type="hidden" name="_method" value="put">
 		    <div class="form-group">
 		        <form:label path="donationName">Donation Name</form:label>

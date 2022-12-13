@@ -13,6 +13,10 @@
         <title>Insert title here</title>
     </head>
     <body>
+    <form action="/donations/search">
+    	<input type="text" name="search"/>
+    	<input type="submit" value="Search" />
+    </form>
 		<table>
 			<thead>
 				<tr>
@@ -38,7 +42,7 @@
 				</c:forEach>
 			</tbody>		
 		</table>
-		<form:form action="/donations/process" method="post" modelAttribute="donation">
+		<form:form action="/donations/all" method="post" modelAttribute="donation">
 		    <div class="form-group">
 		        <form:label path="donationName">Donation Name</form:label>
 		        <form:input type="text" path="donationName" class="form-control" />
