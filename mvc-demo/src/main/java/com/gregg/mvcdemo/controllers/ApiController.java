@@ -33,7 +33,7 @@ public class ApiController {
 	//Create
 	@PostMapping("/donations")
 	public Donation createDonation (@RequestParam("donationName") String donationName, @RequestParam("donor") String donor, @RequestParam("quantity") Integer quantity) {
-		Donation newDonation = new Donation(donor, donationName, quantity);
+		Donation newDonation = new Donation(donationName, quantity);
 		return donationServ.create(newDonation);
 	}
 	
@@ -45,8 +45,8 @@ public class ApiController {
 	
 	//Edit/Update
 	@PutMapping("/donations/{id}")
-	public Donation findOneAndUpdate(@PathVariable("id") Long id, @RequestParam("donationName") String donationName, @RequestParam("donor") String donor, @RequestParam("quantity") Integer quantity ) {
-		return donationServ.update(id, donor, donationName, quantity);
+	public Donation findOneAndUpdate(@PathVariable("id") Long id, @RequestParam("donationName") String donationName, @RequestParam("quantity") Integer quantity ) {
+		return donationServ.update(id, donationName, quantity);
 	}
 	
 	//Delete

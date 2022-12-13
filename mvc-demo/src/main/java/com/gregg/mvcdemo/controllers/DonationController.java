@@ -16,14 +16,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.gregg.mvcdemo.models.Donation;
 import com.gregg.mvcdemo.services.DonationService;
+import com.gregg.mvcdemo.services.UserService;
 
 @Controller
 @RequestMapping ("/donations")
 public class DonationController {
 
 	public final DonationService donationServ;
-	public DonationController(DonationService donationServ) {
+	private final UserService userServ;
+	
+	public DonationController(DonationService donationServ, UserService userServ) {
 		this.donationServ = donationServ;
+		this.userServ = userServ;
 	}
 	
 	@GetMapping("/all")
@@ -48,8 +52,19 @@ public class DonationController {
 	}
 	
 	@GetMapping("/new")
-	public String newDonation(@ModelAttribute("donation") Donation donation) {
+	public String newDonation(@ModelAttribute("donation") Donation donation, Model model) {
+		model.addAttribute("allUsers", userServ.findAll());
 		return "newDonation.jsp";
+	}
+	
+	@PostMapping("/new")
+	public String processDonation1(@Valid @ModelAttribute("donation") Donation donation, BindingResult result, Model model) {
+		if (result.hasErrors()) {
+			model.addAttribute("allUsers", userServ.findAll());
+			return"newDonation.jsp";
+		}
+		donationServ.create(donation);
+		return "redirect:/donations/all";
 	}
 	
 	@PostMapping("/all")
@@ -76,7 +91,7 @@ public class DonationController {
 			return "donationEdit.jsp";
 		}
 		donationServ.update(donation);
-		return "redirect:/donations/all";
+		return "redirect:/";
 	}
 	
 	@DeleteMapping("/{id}")
