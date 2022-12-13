@@ -1,9 +1,0 @@
-package com.caresoft.clinicapp.models;
-
-public class Physician extends User implements HIPAACompliantUser {
-
-	public Physician() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

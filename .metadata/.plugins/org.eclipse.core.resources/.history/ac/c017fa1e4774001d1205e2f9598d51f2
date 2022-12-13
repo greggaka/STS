@@ -1,9 +1,0 @@
-package com.gregg.abstractdemo.abstracts;
-
-public abstract class Payment {
-
-	public Payment() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

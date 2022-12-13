@@ -1,9 +1,0 @@
-package com.caresoft.clinicapp.models;
-
-public class Physician {
-
-	public Physician() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

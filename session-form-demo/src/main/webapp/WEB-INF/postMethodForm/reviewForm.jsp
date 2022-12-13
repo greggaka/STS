@@ -14,7 +14,10 @@
     </head>
     <body>
 		<h1>Review Form</h1>
+		<p><c:out value ="${ ratingError }" /></p>
+		<p><c:out value ="${ movieError }" /></p>
 		<form action="/review/process" method="post">
+		<input type="hidden" name="userId" value="12" />
 			<div>
 				<label>Movie</label>
 				<input type="text" name="movie" />

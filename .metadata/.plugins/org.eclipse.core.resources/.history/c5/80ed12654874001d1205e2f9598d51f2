@@ -1,9 +1,0 @@
-package com.gregg.abstractdemo.models;
-
-public class CreditCardPayment {
-
-	public CreditCardPayment() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

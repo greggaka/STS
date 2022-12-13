@@ -1,9 +1,0 @@
-package com.caresoft.clinicapp.models;
-
-public class AdminUser {
-
-	public AdminUser() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

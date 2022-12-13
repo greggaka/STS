@@ -1,9 +1,0 @@
-package com.gregg.springDemo.models;
-
-public class Developer {
-
-	public Developer() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

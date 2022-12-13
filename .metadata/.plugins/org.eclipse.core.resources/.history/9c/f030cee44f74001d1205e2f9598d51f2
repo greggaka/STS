@@ -1,9 +1,0 @@
-package com.gregg.zooKeeper.models;
-
-public class Mammals {
-
-	public Mammals() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
