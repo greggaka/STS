@@ -13,7 +13,7 @@
     </head>
     <body>
 		<h1>Add a Destination</h1>
-		<form:form action = "/destination/create" modelAttribute="destination" method="post">
+		<form:form action = "/destinations/create" modelAttribute="destination" method="post">
 			<form:input type="hidden" value="${user_id}" path="traveler" />
 			<div class="form-group">
 	            <form:label path="destinationName">Destination Name</form:label>

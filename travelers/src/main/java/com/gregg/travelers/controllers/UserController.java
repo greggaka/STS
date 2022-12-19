@@ -31,6 +31,7 @@ public class UserController {
 		model.addAttribute("loginUser", new LoginUser());
 		return "user/loginReg.jsp";
 	}
+	
 	@PostMapping("login/register")
 	public String registerUser(@Valid @ModelAttribute("newUser") User user, BindingResult result, HttpSession session, Model model) {
 		//check if passwords match
